@@ -1,0 +1,47 @@
+.navbar-product{
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+z-index: 99;
+    .container{
+        background-color: $main-color;
+        border-radius: 0 0 10px  10px;
+        ul{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                a{
+                    color: $text-color;
+                    &.active{
+                        background-color: $text-color;
+                        color: $main-color;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-product{
+
+        .container{
+           
+            ul{
+               
+                li{
+                    a{
+                        font-size: 10px;
+                        &.active{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

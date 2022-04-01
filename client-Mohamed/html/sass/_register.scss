@@ -1,0 +1,123 @@
+.regieter, .login{
+    position: relative;
+    .container{
+        .form{
+            background-color: $text-color;
+            width: 500px;
+            max-width: 100%;
+            margin: 50px auto;
+            min-height: 100vh;
+            border-radius: 18px;
+            padding: 10px;
+            box-shadow: 0 0 4px #666;
+            text-align: center;
+            position: relative;
+
+            form{
+                padding: 10px;
+                header{
+                    border-bottom: 1px solid $balc-color;
+                    padding: 10px;
+                    margin: 0 auto 50px;
+                    img{
+                      width: 100px;
+                    }
+                    h2{
+                     color: $main-color;
+                     font-size: 30px;
+                    }
+                }
+                .find-img{
+                    margin: 40px auto;
+                    input{
+                        display: none;
+
+                    }
+                    label{
+                        font-size: 30px;
+                        color: $main-color;
+                        cursor: pointer;
+                       i{
+                           font-size: 40px;
+                          
+                       }
+                        span{
+                            font-size: 17px;
+                            display: block;
+                            margin: 20px;
+                        }
+                    }
+                }
+               .checkboxes{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 500px;
+                max-width: 100%;
+                margin: 30px 0;
+                text-align: start;
+                .checkbox{
+ 
+                }
+               }
+                .find{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    label{
+                    font-size: 20px;
+                    }
+                    input{
+                        padding: 10px;
+                        height: 40px;
+                        width: calc(100% - 50px);
+                        outline: none;
+                        border: none;
+                        font-size: 16px;
+                        border-bottom: 1px solid $balc-color;
+                        &:focus{
+                            border-color: $main-color;
+                            font-size: 20px;
+                        }
+                      
+                    }
+                    
+                    .input-description{
+                        height: 150px;
+                        border: 1px solid #333;
+                        
+                    }
+                    .clases{
+                        opacity: none;
+                        width: 100%;
+                        border: none;
+                        padding: 10px;
+                        font-size: 17px;
+                        
+                        option{
+                           
+                        }
+                    }
+                }
+                .submit{
+                    margin: 30px auto;
+                    button{
+                        outline: none;
+                        border: 2px solid $main-color;
+                        background: none;
+                        padding: 10px;
+                        border-radius: 4px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        &:hover{
+                            color: $text-color;
+                            background-color: $main-color;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
