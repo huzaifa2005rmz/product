@@ -1,0 +1,34 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+
+
+/* container whit  */
+.container{
+    width: 600px;
+    margin-right: 15px;
+    margin-left: 15px;
+     margin: auto;
+}
+/* samll  */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* large  */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
