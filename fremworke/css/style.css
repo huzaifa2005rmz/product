@@ -5,7 +5,99 @@
    
 }
 
+:root {
+    --main-color: rgb(41, 40, 29);
+    --ather-color: rgb(230 194 46);
+    --whit-color: #eee;
+    --black-color : #333;
+    --pane-padding: 10px ;
+  }
 
+  body{
+    font-family: 'Cairo', sans-serif;
+    text-align: end;
+  }
+/* nav bar  */
+.home .navbar{
+    background-color: var(--main-color);
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+}
+.home .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .navbar .container  ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.home .navbar .container  ul li a{
+    padding: var(--pane-padding);
+   color: var(--whit-color);
+   font-weight: 700;
+   transition: 0.5s;  
+  }
+  .home .navbar .container  ul li a:hover{
+color: var(--ather-color);
+background-color: var(--whit-color);
+border-radius:  0 0  0 30px;
+
+    
+  }
+  .home .navbar .container .image-logo {
+width: 200px;
+    
+  }
+  .home .navbar .container .image-logo img{
+    width: 200px;
+        
+      }
+ 
+/* nav bar  */
+
+/* home  */
+.home .home-page{
+    background-color: var(--main-color);
+    min-height: 100vh ;
+}
+
+.home .home-page .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+}
+.home .home-page .container img{
+ width: 500px;
+ transition: 1s;
+}
+.home .home-page .container .contact{
+    color: var(--whit-color);
+    margin-top: 100px;
+   }
+   .home .home-page .container .contact h2{
+    color: var(--ather-color);
+
+      }
+      .home .home-page .container .contact p{
+        line-height: 2;
+        color: #ccc;
+    
+          }
+
+/* home  */
+/* start box product  */
+/* end box product  */
+.boxes-product{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
 
 /* container whit  */
 .container{
